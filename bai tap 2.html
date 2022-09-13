@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<label>chu vi va dien tich hinh tron</label>
+<input id="hienThi">
+<button onclick="chuViVaDienTich()"> click </button>
+<h3 id="chuVi"></h3>
+<h3 id="dienTich"></h3>
+<body>
+<script>
+    function chuViVaDienTich(){
+        let a =+document.getElementById('hienThi').value;
+        let pi= 3.14
+        let chuVi= pi*2*a
+        let dienTich=pi*a*a
+        document.getElementById('chuVi').innerHTML='chu vi hinh tron la:'+chuVi
+        document.getElementById('dienTich').innerHTML='dien tich hinh tron la:'+dienTich
+    }
+</script>
+</body>
+</html>

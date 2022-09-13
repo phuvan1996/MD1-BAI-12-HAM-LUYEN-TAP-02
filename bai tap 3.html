@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>TINH GIAI THUA</h1>
+<label>Nhap n:</label>
+<input id="enter" type="text"><label>
+    <button onclick="giaiThua()">Click</button>
+</label>
+<h2 id="ketQua"></h2>
+<body>
+<script>
+            function giaiThua(){
+            let n = +document.getElementById('enter').value;
+            let result = 1
+            if (n >= 1) {
+            for (let i = 1; i <= n; i++) {
+            result = result * i
+        }
+            document.getElementById('ketQua').innerHTML = 'Gai thua cua n la: ' +result
+        } else {
+            document.getElementById('ketQua').innerHTML = 'n phai la so duong'
+        }
+        }
+</script>
+</body>
+</html>

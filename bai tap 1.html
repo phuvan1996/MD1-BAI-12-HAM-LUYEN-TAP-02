@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<label>tinh binh phuong</label>
+<input id="binhphuong" type="text">
+<button onclick="tinhBinhPhuong()"> kiem tra</button>
+<h3 id="ketqua"> ket qua</h3>
+<body>
+<script>
+    function tinhBinhPhuong(){
+        let a = +document.getElementById('binhphuong').value;
+        a=a*a
+        document.getElementById('ketqua').innerHTML=('ket qua: so binh phuong la:'+a)
+    }
+</script>
+</body>
+</html>
